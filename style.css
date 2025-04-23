@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #fff7fb;
+    color: #444;
+  }
+  
+  header {
+    background-color: #fde2ff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e09eff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #d985f7;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #b64fc8;
+  }
+  
+  .hero {
+    background: #ffe4ec;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 28px;
+    color: #ffa8ba;
+  }
+  
+  .hero p {
+    margin: 10px 0 20px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background: #fab0c4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .hero button:hover {
+    background: #f891ab;
+  }
+  
+  .products {
+    background-color: #f6f0ff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .products h2 {
+    color: #c084fc;
+    margin-bottom: 30px;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    transition: 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-card h3 {
+    color: #e09eff;
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .product-card button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #a5d8ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  
+  .product-card button:hover {
+    background: #74c0fc;
+  }
+  
+  .contact {
+    background: #e0f7fa;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+  }
+  
+  .contact input {
+    padding: 8px;
+    width: 200px;
+    margin-top: 10px;
+  }
+  
+  .contact button {
+    padding: 8px 16px;
+    background: #4fc3f7;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    transition: 0.3s;
+  }
+  
+  .contact button:hover {
+    background: #29b6f6;
+  }
+  
+  footer {
+    background: #fde2ff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+  }
+ .viewmore{
+    background-color: #ffdaf0;
+    color: #a64ac9;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.viewmore: hover{
+    background-color: #ffcce6;
+}
+@media (maxwidth: 480px){
+    .hero h2{
+        font-size: 1.8rem;
+    }
+    .hero p{
+        font-size: 0.9rem;
+    }
+    .produst-card{
+        width: 100%;
+    }
+    .contact input[type="email"]{
+        width: 90%;
+    }
+    .contact button{
+        width: 90%;
+    }
+
+}
