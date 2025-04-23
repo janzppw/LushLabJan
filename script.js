@@ -7,6 +7,6 @@ function handleSubscribe() {
   if (email) {
     alert(`Thanks for subscribing, ${email}!`);
   } else {
-    alert("Please enter valid Email!");
+    alert('Please enter valid Email!');
   }
 }
