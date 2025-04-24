@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback - LushLab</title>
+  <style>
+    body {
+      background: #fff7fb;
+      font-family: 'Poppins', sans-serif;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #f8c8dc;
+      border-radius: 8px;
+      background: #fff0f6;
+    }
+    form button {
+      padding: 12px 24px;
+      background: #ffb3c1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #f891ab;
+    }
+  </style>
+  <script>
+    function submitFeedback(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email && message) {
+        alert(`Thank you, ${name}! Your feedback has been received.`);
+        document.getElementById('feedback-form').reset();
+      } else {
+        alert("Please fill out all fields.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">LushLab</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="prizes.html">Prizes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Feedback Form</h2>
+    <p>We’d love to hear your thoughts!</p>
+    <form id="feedback-form" onsubmit="submitFeedback(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Feedback" rows="5" required></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LushLab by Jan </p>
+  </footer>
+</body>
+</html>
