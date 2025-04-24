@@ -6,57 +6,217 @@
   <title>Prizes - LushLab</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      background: #fef6ff;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .prizes-section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .prizes-section h2 {
-      font-size: 2rem;
-      color: #c084fc;
-      margin-bottom: 40px;
-    }
-
-    .prize-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      padding: 0 10%;
-    }
-
-    .prize-card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .prize-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .prize-card img {
-      width: 100%;
-      border-radius: 15px;
-      margin-bottom: 15px;
-    }
-
-    .prize-card h3 {
-      color: #ff80ab;
-      font-size: 1.3rem;
-      margin-bottom: 8px;
-    }
-
-    .prize-card p {
-      font-size: 0.95rem;
-      color: #6b7280;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffafd;
+  color: #444;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffeaf6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #ff80ab;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #ff66a3;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #d96da6;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ffe4ec, #d8f3dc);
+}
+.hero h2 {
+  font-size: 2.5rem;
+  color: #ff6f91;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 25px;
+}
+.hero button {
+  padding: 12px 30px;
+  background: #ffb3c1;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hero button:hover {
+  background: #ff92a5;
+}
+.products {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fef6ff;
+}
+.products h2 {
+  font-size: 2rem;
+  color: #c084fc;
+  margin-bottom: 40px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.product-card {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 250px;
+  padding: 25px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.product-card h3 {
+  color: #ff80ab;
+  font-size: 1.3rem;
+}
+.product-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 10px 0;
+}
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 22px;
+  background: #a5b4fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.product-card button:hover {
+  background: #818cf8;
+}
+.viewmore {
+  margin-top: 40px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #fcd5ce;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+}
+.viewmore:hover {
+  background: #ffcce6;
+}
+.contact {
+  padding: 60px 20px;
+  background: #e0f2fe;
+  text-align: center;
+}
+.contact h2 {
+  color: #0ea5e9;
+  font-size: 1.8rem;
+}
+.contact p {
+  margin: 10px 0 20px;
+  color: #4b5563;
+}
+.contact input[type="email"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #94a3b8;
+  outline: none;
+  width: 250px;
+}
+.contact button {
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #0ea5e9;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background: #ffeaf6;
+  color: #6c757d;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero button {
+    width: 100%;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  .product-card {
+    width: 100%;
+  }
+  .contact input[type="email"],
+  .contact button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
   </style>
 </head>
 <body>
