@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prizes - LushLab</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #fef6ff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .prizes-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .prizes-section h2 {
+      font-size: 2rem;
+      color: #c084fc;
+      margin-bottom: 40px;
+    }
+
+    .prize-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 0 10%;
+    }
+
+    .prize-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .prize-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .prize-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .prize-card h3 {
+      color: #ff80ab;
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .prize-card p {
+      font-size: 0.95rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">LushLab</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="prizes.html">Prizes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="prizes-section">
+    <h2>Prize Details</h2>
+    <div class="prize-grid">
+      <div class="prize-card">
+        <img src="images/plushie.jpg" alt="Mini Plushie Pack" />
+        <h3>Mini Plushie Pack</h3>
+        <p>For the top 3 buyers of the month — soft, squishy, and adorable.</p>
+      </div>
+      <div class="prize-card">
+        <img src="images/stationery.jpg" alt="Stationery Kit" />
+        <h3>Pastel Stationery Kit</h3>
+        <p>A set of dreamy tools to make your notes sparkle and glow.</p>
+      </div>
+      <div class="prize-card">
+        <img src="images/box.jpg" alt="LushLab Surprise Box" />
+        <h3>Surprise Box</h3>
+        <p>Get randomly picked aesthetic goodies just for submitting feedback.</p>
+      </div>
+      <div class="prize-card">
+        <img src="images/discount.jpg" alt="Special Discounts" />
+        <h3>Special Discounts</h3>
+        <p>Exclusive coupon codes for our most loyal subscribers. You’re the best!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LushLab by Jan</p>
+  </footer>
+</body>
+</html>
