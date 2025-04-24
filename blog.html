@@ -6,23 +6,120 @@
   <title>Blog - LushLab</title>
   <style>
     body {
-      background: #fff9fc;
-      font-family: 'Poppins', sans-serif;
-    }
-    .blog-post {
-      background: #ffffff;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 700px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .blog-post h3 {
-      color: #e09eff;
-    }
-    .blog-post p {
-      color: #555;
-      line-height: 1.6;
+  background: #fff9fc;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffeaf6;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff80ab;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff66a3;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #d96da6;
+}
+
+.products {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  color: #c084fc;
+  margin-bottom: 40px;
+}
+
+.blog-post {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 25px;
+  max-width: 750px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.blog-post h3 {
+  color: #e09eff;
+  margin-bottom: 12px;
+}
+
+.blog-post p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffeaf6;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .products {
+    padding: 40px 10px;
+  }
+
+  .blog-post {
+    padding: 20px;
+    margin: 15px 10px;
+  }
+
+  .blog-post p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
     }
   </style>
 </head>
